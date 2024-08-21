@@ -61,11 +61,11 @@ const GrabOrder = () => {
   const handleGrabClick = () => {
 
   // if ((user_level === "VIP1" && orderCount === 0 && balance <= 10) || (user_level === "VIP2" && orderCount === 0 && balance <= 39)) {
-  //   setMessageF("Forbidden, contact Administrator");
+  //   setMessageF("Forbidden. Contact administrator ");
   //   setShowModalF(true);
 
   if ((user_level === "VIP1" && orderCount === 0 && balance < 30) || (user_level === "VIP2" && orderCount === 0 && balance <= 39)) {
-    setMessageF("Forbidden, contact Administrator");
+    setMessageF("Forbidden. Contact administrator.");
     setShowModalF(true);
 
   } else if (user_level === "VIP2" && orderCount === 1 && balance < 19) {

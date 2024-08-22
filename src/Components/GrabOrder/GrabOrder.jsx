@@ -73,7 +73,7 @@ const GrabOrder = () => {
     setShowModalF(true);
 
   } else if (user_level === "VIP3" && orderCount === 0 && balance < 70) {
-    setMessageF("Top up $70 to start Grabbing"); 
+    setMessageF("Forbidden. Contact administrator."); 
     setShowModalF(true);
 
   } else if (user_level === "VIP3" && orderCount === 1 && balance < 120) {
